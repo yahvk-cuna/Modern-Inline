@@ -27,3 +27,16 @@ versionRange = "[1.20.1,)"
 ordering = "NONE"
 side = "BOTH"
 
+[[dependencies.moderninline]]
+modId = "modernui"
+mandatory = true
+versionRange = "[3.11.1.0,3.11.2.0)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.moderninline]]
+modId = "inline"
+mandatory = true
+versionRange = "[1.20.1-1.0.1,)"
+ordering = "NONE"
+side = "CLIENT"
