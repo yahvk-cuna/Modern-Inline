@@ -3,17 +3,18 @@ package moe.yahvk.moderninline.mixin;
 import com.samsthenerd.inline.impl.InlineStyle;
 import icyllis.modernui.mc.text.TextLayoutProcessor;
 import moe.yahvk.moderninline.HasInlineException;
+import net.minecraft.network.chat.Style;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import net.minecraft.network.chat.Style;
 
 @Mixin(value = TextLayoutProcessor.class, remap = false)
-public class TextLayoutProcessorMixin {
+public abstract class TextLayoutProcessorMixin {
     @Shadow
-    private void reset() {}
+    private void reset() {
+    }
 
     // This injection point is the first place where it can be detected that the text contains InlineData without pre-checking.
     @Inject(method = "lambda$new$1", at = @At("HEAD"))

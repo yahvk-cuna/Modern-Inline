@@ -12,6 +12,6 @@ dependencies {
 
     compileOnly(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-common:0.3.3"))
 
-    modImplementation "icyllis.modernui:ModernUI-Forge:${minecraft_version}-${project.modernui_version}"
+    modImplementation "icyllis.modernui:ModernUI-Fabric:${minecraft_version}-${project.modernui_version}"
     modApi "com.samsthenerd.inline:inline-common:${project.inline_version}"
 }

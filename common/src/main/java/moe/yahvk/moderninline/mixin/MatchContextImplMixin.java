@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.Unique;
 import java.util.TreeMap;
 
 @Mixin(value = MatchContextImpl.class, remap = false)
-public class MatchContextImplMixin implements MatchContextController {
+public abstract class MatchContextImplMixin implements MatchContextController {
     @Shadow
     @Final
     private TreeMap<Integer, InlineMatch> matchMap;

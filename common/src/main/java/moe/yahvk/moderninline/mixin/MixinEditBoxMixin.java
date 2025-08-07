@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(value = EditBox.class, priority = 1500, remap = false)
-public class MixinEditBoxMixin {
+public abstract class MixinEditBoxMixin {
     @TargetHandler(
             mixin = "icyllis.modernui.mc.text.mixin.MixinEditBox",
             name = "onRenderWidget"
@@ -18,7 +18,7 @@ public class MixinEditBoxMixin {
     @WrapMethod(
             method = "@MixinSquared:Handler"
     )
-    private void reduceLogLevel(GuiGraphics gr, int mouseX, int mouseY, float deltaTicks, CallbackInfo ci, Operation<Void> original) {
+    private void onRenderWidget(GuiGraphics gr, int mouseX, int mouseY, float deltaTicks, CallbackInfo ci, Operation<Void> original) {
         try {
             original.call(gr, mouseX, mouseY, deltaTicks, ci);
         } catch (HasInlineException ignored) {
