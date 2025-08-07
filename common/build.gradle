@@ -9,9 +9,8 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
 
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.5.0"))
-    implementation(include("io.github.llamalad7:mixinextras-forge:0.5.0"))
+
     compileOnly(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-common:0.3.3"))
-    implementation(include("com.github.bawnorton.mixinsquared:mixinsquared-forge:0.3.3"))
 
     modImplementation "icyllis.modernui:ModernUI-Forge:${minecraft_version}-${project.modernui_version}"
     modApi "com.samsthenerd.inline:inline-common:${project.inline_version}"

@@ -4,8 +4,13 @@
   "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8",
   "client": [
+    "FontRendererMixin",
+    "MatchContextImplMixin",
+    "MixinEditBoxMixin",
+    "ModernStringSplitterMixin"
   ],
   "mixins": [
+    "TextLayoutProcessorMixin"
   ],
   "injectors": {
     "defaultRequire": 1
