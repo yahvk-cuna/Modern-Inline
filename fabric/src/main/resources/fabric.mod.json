@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "moderninline",
+  "version": "${version}",
+  "name": "ModernInline",
+  "description": "",
+  "authors": [
+    "yahvk"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "unlicense",
+  "icon": "assets/moderninline/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "moe.yahvk.moderninline.fabric.ModerninlineFabric"
+    ],
+    "client": [
+      "moe.yahvk.moderninline.fabric.client.ModerninlineFabricClient"
+    ]
+  },
+  "mixins": [
+    "moderninline.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.1",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
