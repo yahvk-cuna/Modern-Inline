@@ -3,7 +3,7 @@
   "id": "moderninline",
   "version": "${version}",
   "name": "ModernInline",
-  "description": "",
+  "description": "A compatible mod for Modern UI and Inline.",
   "authors": [
     "yahvk"
   ],

@@ -9,9 +9,9 @@ version = "${version}"
 displayName = "ModernInline"
 authors = "yahvk"
 description = '''
-
+A compatible mod for Modern UI and Inline.
 '''
-#logoFile = ""
+logoFile = "assets/moderninline/icon.png"
 
 [[dependencies.moderninline]]
 modId = "forge"
