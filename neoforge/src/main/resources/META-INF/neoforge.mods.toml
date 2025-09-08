@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion = "[2,)"
 #issueTrackerURL = ""
 license = "Unlicense"
 
@@ -14,15 +14,15 @@ A compatible mod for Modern UI and Inline.
 logoFile = "assets/moderninline/icon.png"
 
 [[dependencies.moderninline]]
-modId = "forge"
-mandatory = true
-versionRange = "[47,)"
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.moderninline]]
 modId = "minecraft"
-mandatory = true
+type = "required"
 versionRange = "[1.20.1,)"
 ordering = "NONE"
 side = "BOTH"
@@ -40,3 +40,6 @@ mandatory = true
 versionRange = "[1.20.1-1.0.1,)"
 ordering = "NONE"
 side = "CLIENT"
+
+[[mixins]]
+config = "moderninline.mixins.json"

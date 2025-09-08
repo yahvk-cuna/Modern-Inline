@@ -11,4 +11,8 @@ rootProject.name = 'moderninline'
 
 include 'common'
 include 'fabric'
-include 'forge'
+if (minecraft_version == "1.21.1") {
+    include 'neoforge'
+} else {
+    include 'forge'
+}

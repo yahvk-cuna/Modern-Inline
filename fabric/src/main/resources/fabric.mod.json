@@ -29,7 +29,7 @@
   ],
   "depends": {
     "fabricloader": ">=0.16.0",
-    "minecraft": "~1.20.1",
+    "minecraft": ">=1.20 <1.22",
     "java": ">=17",
     "inline": ">=1.20.1-1.0.1",
     "modernui": "^3.11.1.0"
